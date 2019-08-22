@@ -18,6 +18,8 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Primary"
+        
         tableView.backgroundColor = .cyan
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }

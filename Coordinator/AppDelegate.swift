@@ -15,10 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var coordinator = AppCoordinator(splitViewController: UISplitViewController())
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        coordinator.start()
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = coordinator.rootViewController
         window?.makeKeyAndVisible()
-        coordinator.start()
+        
         return true
     }
 

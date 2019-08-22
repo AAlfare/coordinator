@@ -25,6 +25,7 @@ class AppCoordinator: SplitCoordinator {
         splitViewController.viewControllers = [navigationController]
         
         let primary = ViewController()
+        primary.title = "Primary"
         primary.delegate = self
         navigationController.pushViewController(primary, animated: true)
     }

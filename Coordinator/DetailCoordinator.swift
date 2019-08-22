@@ -25,6 +25,7 @@ class DetailCoordinator: Coordinator {
     
     func start() {
         let detailViewController = DetailViewController()
+        detailViewController.title = "Detail"
         detailViewController.delegate = self
         detailViewController.view.backgroundColor = .blue
         navigationController.pushViewController(detailViewController, animated: true)
@@ -34,6 +35,7 @@ class DetailCoordinator: Coordinator {
 extension DetailCoordinator: DetailViewControllerDelegate {
     func doSomething() {
         let somethingViewController = UIViewController()
+        somethingViewController.title = "Something..."
         somethingViewController.view.backgroundColor = .purple
         navigationController.pushViewController(somethingViewController, animated: true)
     }
